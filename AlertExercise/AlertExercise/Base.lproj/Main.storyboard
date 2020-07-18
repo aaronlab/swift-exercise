@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AlertExercise" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Now:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3kU-Ux-GWn">
+                                <rect key="frame" x="20" y="94" width="39" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="yyyy-MM-dd HH:mm:ss EEE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y5W-Td-ecW">
+                                <rect key="frame" x="69" y="94" width="217" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Selected:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FXS-1p-ls6">
+                                <rect key="frame" x="20" y="791" width="72" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="will be shown" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="glo-qz-tGX">
+                                <rect key="frame" x="102" y="791" width="102.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="yeH-GW-cTr">
+                                <rect key="frame" x="0.0" y="115" width="414" height="676"/>
+                                <connections>
+                                    <action selector="changeDatePicker:" destination="BYZ-38-t0r" eventType="valueChanged" id="yJ5-U1-5st"/>
+                                </connections>
+                            </datePicker>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="yeH-GW-cTr" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="EjJ-PY-pvJ"/>
+                            <constraint firstItem="Y5W-Td-ecW" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="FOW-rL-SeL"/>
+                            <constraint firstItem="Y5W-Td-ecW" firstAttribute="leading" secondItem="3kU-Ux-GWn" secondAttribute="trailing" constant="10" id="FlX-0J-fgf"/>
+                            <constraint firstItem="yeH-GW-cTr" firstAttribute="top" secondItem="3kU-Ux-GWn" secondAttribute="bottom" id="JtX-Xb-QQx"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="glo-qz-tGX" secondAttribute="bottom" constant="50" id="VsG-lh-8gX"/>
+                            <constraint firstItem="yeH-GW-cTr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="jXR-l4-Tum"/>
+                            <constraint firstItem="3kU-Ux-GWn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="k1k-1Y-aO2"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="FXS-1p-ls6" secondAttribute="bottom" constant="50" id="kAX-sb-Jji"/>
+                            <constraint firstItem="FXS-1p-ls6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="mTV-4W-Lq1"/>
+                            <constraint firstItem="glo-qz-tGX" firstAttribute="leading" secondItem="FXS-1p-ls6" secondAttribute="trailing" constant="10" id="mbU-kG-QQs"/>
+                            <constraint firstItem="FXS-1p-ls6" firstAttribute="top" secondItem="yeH-GW-cTr" secondAttribute="bottom" id="mhB-VL-A3c"/>
+                            <constraint firstItem="3kU-Ux-GWn" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="oXj-iu-hIV"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="lblNow" destination="Y5W-Td-ecW" id="SUF-qJ-biO"/>
+                        <outlet property="lblSelected" destination="glo-qz-tGX" id="RIh-gg-Ucn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="132" y="138"/>
+        </scene>
+    </scenes>
+</document>
