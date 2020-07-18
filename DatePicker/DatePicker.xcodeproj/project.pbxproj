@@ -7,29 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A463914F24C2B68800C2F75A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A463914E24C2B68800C2F75A /* AppDelegate.swift */; };
-		A463915124C2B68800C2F75A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A463915024C2B68800C2F75A /* SceneDelegate.swift */; };
-		A463915324C2B68800C2F75A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A463915224C2B68800C2F75A /* ViewController.swift */; };
-		A463915624C2B68800C2F75A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A463915424C2B68800C2F75A /* Main.storyboard */; };
-		A463915824C2B68900C2F75A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A463915724C2B68900C2F75A /* Assets.xcassets */; };
-		A463915B24C2B68900C2F75A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A463915924C2B68900C2F75A /* LaunchScreen.storyboard */; };
-		A463916324C2B69E00C2F75A /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = A463916224C2B69E00C2F75A /* .gitignore */; };
+		A463919124C2BF0100C2F75A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A463919024C2BF0100C2F75A /* AppDelegate.swift */; };
+		A463919324C2BF0100C2F75A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A463919224C2BF0100C2F75A /* SceneDelegate.swift */; };
+		A463919524C2BF0100C2F75A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A463919424C2BF0100C2F75A /* ViewController.swift */; };
+		A463919824C2BF0100C2F75A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A463919624C2BF0100C2F75A /* Main.storyboard */; };
+		A463919A24C2BF0200C2F75A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A463919924C2BF0200C2F75A /* Assets.xcassets */; };
+		A463919D24C2BF0200C2F75A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A463919B24C2BF0200C2F75A /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		A463914B24C2B68800C2F75A /* DatePicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DatePicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		A463914E24C2B68800C2F75A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A463915024C2B68800C2F75A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A463915224C2B68800C2F75A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		A463915524C2B68800C2F75A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		A463915724C2B68900C2F75A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		A463915A24C2B68900C2F75A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		A463915C24C2B68900C2F75A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A463916224C2B69E00C2F75A /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		A463918D24C2BF0100C2F75A /* DatePicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DatePicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A463919024C2BF0100C2F75A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A463919224C2BF0100C2F75A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		A463919424C2BF0100C2F75A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A463919724C2BF0100C2F75A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A463919924C2BF0200C2F75A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A463919C24C2BF0200C2F75A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A463919E24C2BF0200C2F75A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		A463914824C2B68800C2F75A /* Frameworks */ = {
+		A463918A24C2BF0100C2F75A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -39,33 +37,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		A463914224C2B68800C2F75A = {
+		A463918424C2BF0100C2F75A = {
 			isa = PBXGroup;
 			children = (
-				A463916224C2B69E00C2F75A /* .gitignore */,
-				A463914D24C2B68800C2F75A /* DatePicker */,
-				A463914C24C2B68800C2F75A /* Products */,
+				A463918F24C2BF0100C2F75A /* DatePicker */,
+				A463918E24C2BF0100C2F75A /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		A463914C24C2B68800C2F75A /* Products */ = {
+		A463918E24C2BF0100C2F75A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A463914B24C2B68800C2F75A /* DatePicker.app */,
+				A463918D24C2BF0100C2F75A /* DatePicker.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		A463914D24C2B68800C2F75A /* DatePicker */ = {
+		A463918F24C2BF0100C2F75A /* DatePicker */ = {
 			isa = PBXGroup;
 			children = (
-				A463914E24C2B68800C2F75A /* AppDelegate.swift */,
-				A463915024C2B68800C2F75A /* SceneDelegate.swift */,
-				A463915224C2B68800C2F75A /* ViewController.swift */,
-				A463915424C2B68800C2F75A /* Main.storyboard */,
-				A463915724C2B68900C2F75A /* Assets.xcassets */,
-				A463915924C2B68900C2F75A /* LaunchScreen.storyboard */,
-				A463915C24C2B68900C2F75A /* Info.plist */,
+				A463919024C2BF0100C2F75A /* AppDelegate.swift */,
+				A463919224C2BF0100C2F75A /* SceneDelegate.swift */,
+				A463919424C2BF0100C2F75A /* ViewController.swift */,
+				A463919624C2BF0100C2F75A /* Main.storyboard */,
+				A463919924C2BF0200C2F75A /* Assets.xcassets */,
+				A463919B24C2BF0200C2F75A /* LaunchScreen.storyboard */,
+				A463919E24C2BF0200C2F75A /* Info.plist */,
 			);
 			path = DatePicker;
 			sourceTree = "<group>";
@@ -73,13 +70,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		A463914A24C2B68800C2F75A /* DatePicker */ = {
+		A463918C24C2BF0100C2F75A /* DatePicker */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A463915F24C2B68900C2F75A /* Build configuration list for PBXNativeTarget "DatePicker" */;
+			buildConfigurationList = A46391A124C2BF0200C2F75A /* Build configuration list for PBXNativeTarget "DatePicker" */;
 			buildPhases = (
-				A463914724C2B68800C2F75A /* Sources */,
-				A463914824C2B68800C2F75A /* Frameworks */,
-				A463914924C2B68800C2F75A /* Resources */,
+				A463918924C2BF0100C2F75A /* Sources */,
+				A463918A24C2BF0100C2F75A /* Frameworks */,
+				A463918B24C2BF0100C2F75A /* Resources */,
 			);
 			buildRules = (
 			);
@@ -87,25 +84,25 @@
 			);
 			name = DatePicker;
 			productName = DatePicker;
-			productReference = A463914B24C2B68800C2F75A /* DatePicker.app */;
+			productReference = A463918D24C2BF0100C2F75A /* DatePicker.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		A463914324C2B68800C2F75A /* Project object */ = {
+		A463918524C2BF0100C2F75A /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1160;
 				LastUpgradeCheck = 1160;
 				ORGANIZATIONNAME = "Aaron Lee";
 				TargetAttributes = {
-					A463914A24C2B68800C2F75A = {
+					A463918C24C2BF0100C2F75A = {
 						CreatedOnToolsVersion = 11.6;
 					};
 				};
 			};
-			buildConfigurationList = A463914624C2B68800C2F75A /* Build configuration list for PBXProject "DatePicker" */;
+			buildConfigurationList = A463918824C2BF0100C2F75A /* Build configuration list for PBXProject "DatePicker" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -113,56 +110,55 @@
 				en,
 				Base,
 			);
-			mainGroup = A463914224C2B68800C2F75A;
-			productRefGroup = A463914C24C2B68800C2F75A /* Products */;
+			mainGroup = A463918424C2BF0100C2F75A;
+			productRefGroup = A463918E24C2BF0100C2F75A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A463914A24C2B68800C2F75A /* DatePicker */,
+				A463918C24C2BF0100C2F75A /* DatePicker */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		A463914924C2B68800C2F75A /* Resources */ = {
+		A463918B24C2BF0100C2F75A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A463916324C2B69E00C2F75A /* .gitignore in Resources */,
-				A463915B24C2B68900C2F75A /* LaunchScreen.storyboard in Resources */,
-				A463915824C2B68900C2F75A /* Assets.xcassets in Resources */,
-				A463915624C2B68800C2F75A /* Main.storyboard in Resources */,
+				A463919D24C2BF0200C2F75A /* LaunchScreen.storyboard in Resources */,
+				A463919A24C2BF0200C2F75A /* Assets.xcassets in Resources */,
+				A463919824C2BF0100C2F75A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		A463914724C2B68800C2F75A /* Sources */ = {
+		A463918924C2BF0100C2F75A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A463915324C2B68800C2F75A /* ViewController.swift in Sources */,
-				A463914F24C2B68800C2F75A /* AppDelegate.swift in Sources */,
-				A463915124C2B68800C2F75A /* SceneDelegate.swift in Sources */,
+				A463919524C2BF0100C2F75A /* ViewController.swift in Sources */,
+				A463919124C2BF0100C2F75A /* AppDelegate.swift in Sources */,
+				A463919324C2BF0100C2F75A /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		A463915424C2B68800C2F75A /* Main.storyboard */ = {
+		A463919624C2BF0100C2F75A /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				A463915524C2B68800C2F75A /* Base */,
+				A463919724C2BF0100C2F75A /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		A463915924C2B68900C2F75A /* LaunchScreen.storyboard */ = {
+		A463919B24C2BF0200C2F75A /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				A463915A24C2B68900C2F75A /* Base */,
+				A463919C24C2BF0200C2F75A /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -170,7 +166,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		A463915D24C2B68900C2F75A /* Debug */ = {
+		A463919F24C2BF0200C2F75A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -230,7 +226,7 @@
 			};
 			name = Debug;
 		};
-		A463915E24C2B68900C2F75A /* Release */ = {
+		A46391A024C2BF0200C2F75A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -284,7 +280,7 @@
 			};
 			name = Release;
 		};
-		A463916024C2B68900C2F75A /* Debug */ = {
+		A46391A224C2BF0200C2F75A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -302,7 +298,7 @@
 			};
 			name = Debug;
 		};
-		A463916124C2B68900C2F75A /* Release */ = {
+		A46391A324C2BF0200C2F75A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -323,25 +319,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		A463914624C2B68800C2F75A /* Build configuration list for PBXProject "DatePicker" */ = {
+		A463918824C2BF0100C2F75A /* Build configuration list for PBXProject "DatePicker" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A463915D24C2B68900C2F75A /* Debug */,
-				A463915E24C2B68900C2F75A /* Release */,
+				A463919F24C2BF0200C2F75A /* Debug */,
+				A46391A024C2BF0200C2F75A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A463915F24C2B68900C2F75A /* Build configuration list for PBXNativeTarget "DatePicker" */ = {
+		A46391A124C2BF0200C2F75A /* Build configuration list for PBXNativeTarget "DatePicker" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A463916024C2B68900C2F75A /* Debug */,
-				A463916124C2B68900C2F75A /* Release */,
+				A46391A224C2BF0200C2F75A /* Debug */,
+				A46391A324C2BF0200C2F75A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = A463914324C2B68800C2F75A /* Project object */;
+	rootObject = A463918524C2BF0100C2F75A /* Project object */;
 }

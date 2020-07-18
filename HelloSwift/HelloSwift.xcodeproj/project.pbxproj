@@ -13,7 +13,6 @@
 		A46390DC24C29C5400C2F75A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A46390DA24C29C5400C2F75A /* Main.storyboard */; };
 		A46390DE24C29C5500C2F75A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A46390DD24C29C5500C2F75A /* Assets.xcassets */; };
 		A46390E124C29C5500C2F75A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A46390DF24C29C5500C2F75A /* LaunchScreen.storyboard */; };
-		A46390E924C29C9000C2F75A /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = A46390E824C29C9000C2F75A /* .gitignore */; };
 		A46390EB24C2A1FD00C2F75A /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = A46390EA24C2A1FD00C2F75A /* README.md */; };
 /* End PBXBuildFile section */
 
@@ -26,7 +25,6 @@
 		A46390DD24C29C5500C2F75A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A46390E024C29C5500C2F75A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A46390E224C29C5500C2F75A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A46390E824C29C9000C2F75A /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		A46390EA24C2A1FD00C2F75A /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -45,7 +43,6 @@
 			isa = PBXGroup;
 			children = (
 				A46390EA24C2A1FD00C2F75A /* README.md */,
-				A46390E824C29C9000C2F75A /* .gitignore */,
 				A46390D324C29C5400C2F75A /* HelloSwift */,
 				A46390D224C29C5400C2F75A /* Products */,
 			);
@@ -131,7 +128,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A46390E924C29C9000C2F75A /* .gitignore in Resources */,
 				A46390E124C29C5500C2F75A /* LaunchScreen.storyboard in Resources */,
 				A46390EB24C2A1FD00C2F75A /* README.md in Resources */,
 				A46390DE24C29C5500C2F75A /* Assets.xcassets in Resources */,
