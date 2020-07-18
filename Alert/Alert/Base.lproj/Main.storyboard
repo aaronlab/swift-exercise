@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Alert" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="yqS-uI-UXS">
+                                <rect key="frame" x="10" y="54" width="355" height="631"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="yqS-uI-UXS" secondAttribute="height" multiplier="9:16" id="IBf-zW-fE2"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QEg-Kp-nBZ">
+                                <rect key="frame" x="50" y="735" width="30" height="30"/>
+                                <state key="normal" title="On"/>
+                                <connections>
+                                    <action selector="btnLampOn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jBX-Ec-twN"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b8w-jB-Fe5">
+                                <rect key="frame" x="270" y="735" width="55" height="30"/>
+                                <state key="normal" title="Remove"/>
+                                <connections>
+                                    <action selector="btnLampRemove:" destination="BYZ-38-t0r" eventType="touchUpInside" id="H5B-In-Has"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="szZ-Co-ogM">
+                                <rect key="frame" x="172.66666666666666" y="735" width="30" height="30"/>
+                                <state key="normal" title="Off"/>
+                                <connections>
+                                    <action selector="btnLampOff:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dp4-jG-FYp"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="QEg-Kp-nBZ" firstAttribute="top" secondItem="yqS-uI-UXS" secondAttribute="bottom" constant="50" id="0UP-GZ-wIm"/>
+                            <constraint firstItem="szZ-Co-ogM" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="1UT-Ah-HgE"/>
+                            <constraint firstItem="yqS-uI-UXS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="8fm-xb-MNR"/>
+                            <constraint firstItem="QEg-Kp-nBZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="OFQ-fc-oCA"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="yqS-uI-UXS" secondAttribute="trailing" constant="10" id="YZQ-vt-579"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="b8w-jB-Fe5" secondAttribute="trailing" constant="50" id="gRe-L4-CKd"/>
+                            <constraint firstItem="yqS-uI-UXS" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="pfx-Vd-gNC"/>
+                            <constraint firstItem="b8w-jB-Fe5" firstAttribute="top" secondItem="yqS-uI-UXS" secondAttribute="bottom" constant="50" id="t7j-1D-rzy"/>
+                            <constraint firstItem="szZ-Co-ogM" firstAttribute="top" secondItem="yqS-uI-UXS" secondAttribute="bottom" constant="50" id="wm2-Tf-z59"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="lampImg" destination="yqS-uI-UXS" id="gHG-gG-ML7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="132" y="138"/>
+        </scene>
+    </scenes>
+</document>
