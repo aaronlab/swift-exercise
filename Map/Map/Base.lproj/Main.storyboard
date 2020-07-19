@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Map" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="UpM-xT-pN4">
+                                <rect key="frame" x="10" y="44" width="394" height="32"/>
+                                <segments>
+                                    <segment title="Current"/>
+                                    <segment title="Lyon"/>
+                                    <segment title="Toronto"/>
+                                    <segment title="My Place"/>
+                                </segments>
+                                <connections>
+                                    <action selector="sgChangeLocation:" destination="BYZ-38-t0r" eventType="valueChanged" id="0Pn-Gi-cib"/>
+                                </connections>
+                            </segmentedControl>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="of7-71-4fG">
+                                <rect key="frame" x="0.0" y="85" width="414" height="720.5"/>
+                            </mapView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PZU-hS-xjt">
+                                <rect key="frame" x="20" y="845" width="384" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" systemColor="systemGray2Color" red="0.68235294120000001" green="0.68235294120000001" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xzu-Sv-osV">
+                                <rect key="frame" x="20" y="815.5" width="384" height="19.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="xzu-Sv-osV" firstAttribute="top" secondItem="of7-71-4fG" secondAttribute="bottom" constant="10" id="6S8-Lh-Wex"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="UpM-xT-pN4" secondAttribute="trailing" constant="10" id="7Z2-lB-2cP"/>
+                            <constraint firstItem="of7-71-4fG" firstAttribute="top" secondItem="UpM-xT-pN4" secondAttribute="bottom" constant="10" id="CdC-qy-q1F"/>
+                            <constraint firstItem="UpM-xT-pN4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="M2i-fx-WTO"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="xzu-Sv-osV" secondAttribute="trailing" constant="10" id="NKH-aJ-SYE"/>
+                            <constraint firstItem="PZU-hS-xjt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Nlr-wP-gwF"/>
+                            <constraint firstItem="PZU-hS-xjt" firstAttribute="top" secondItem="xzu-Sv-osV" secondAttribute="bottom" constant="10" id="Op4-3e-c3F"/>
+                            <constraint firstItem="UpM-xT-pN4" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Xde-Xl-6EA"/>
+                            <constraint firstItem="of7-71-4fG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="gID-Is-rcx"/>
+                            <constraint firstItem="xzu-Sv-osV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="oun-Tv-GHR"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="of7-71-4fG" secondAttribute="trailing" id="pAX-NT-BGd"/>
+                            <constraint firstItem="PZU-hS-xjt" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="s0y-zD-UGB"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="PZU-hS-xjt" secondAttribute="trailing" constant="10" id="tDp-Be-K7Y"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="lblLocationInfo1" destination="xzu-Sv-osV" id="mYx-gn-6jh"/>
+                        <outlet property="lblLocationInfo2" destination="PZU-hS-xjt" id="Ax9-QN-jDK"/>
+                        <outlet property="myMap" destination="of7-71-4fG" id="Jp0-xe-yRy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="132" y="138"/>
+        </scene>
+    </scenes>
+</document>
