@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="6ez-JK-8pc">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Tab" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qLF-cv-PA5">
+                                <rect key="frame" x="20" y="64" width="121" height="30"/>
+                                <state key="normal" title="Go to Image View"/>
+                                <connections>
+                                    <action selector="btnMoveImageView:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Hdp-2q-QcE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eQn-V5-KQK">
+                                <rect key="frame" x="235" y="64" width="120" height="30"/>
+                                <state key="normal" title="Go to Date Picker"/>
+                                <connections>
+                                    <action selector="btnMoveDatePicker:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jsm-zB-DWG"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="File.png" translatesAutoresizingMaskIntoConstraints="NO" id="T2Z-bP-eNV">
+                                <rect key="frame" x="0.0" y="100" width="375" height="629"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="T2Z-bP-eNV" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="3U9-OE-Vsk"/>
+                            <constraint firstItem="T2Z-bP-eNV" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="100" id="5kR-gS-hZg"/>
+                            <constraint firstItem="qLF-cv-PA5" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="8D0-eC-lF0"/>
+                            <constraint firstItem="qLF-cv-PA5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="9mK-xP-Uzc"/>
+                            <constraint firstItem="T2Z-bP-eNV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Ah8-AG-JPC"/>
+                            <constraint firstAttribute="trailing" secondItem="T2Z-bP-eNV" secondAttribute="trailing" id="ShL-vG-QNG"/>
+                            <constraint firstItem="eQn-V5-KQK" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="mkD-zf-Tz8"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="eQn-V5-KQK" secondAttribute="trailing" constant="20" id="o42-tP-2l7"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" systemItem="topRated" id="KKq-p7-ZZJ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="945" y="-233"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="vPR-Y5-qLr">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="6ez-JK-8pc" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="lK5-0u-bCs">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="jWy-S5-usm"/>
+                        <segue destination="wno-gt-It1" kind="relationship" relationship="viewControllers" id="grU-XQ-tde"/>
+                        <segue destination="GXj-rU-j6d" kind="relationship" relationship="viewControllers" id="RFl-Od-jy5"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1hI-hm-9TQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="132" y="137.4384236453202"/>
+        </scene>
+        <!--Image View Controller-->
+        <scene sceneID="PGG-DU-hZm">
+            <objects>
+                <viewController id="wno-gt-It1" customClass="ImageViewController" customModule="Tab" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="s8j-vK-QOn">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Yq-ue-ZBu">
+                                <rect key="frame" x="50" y="649" width="56" height="30"/>
+                                <state key="normal" title="Zoom In"/>
+                                <connections>
+                                    <action selector="btnResizeImg:" destination="wno-gt-It1" eventType="touchUpInside" id="qpy-aY-k8n"/>
+                                </connections>
+                            </button>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9bE-hF-8X7">
+                                <rect key="frame" x="276" y="648" width="51" height="31"/>
+                                <connections>
+                                    <action selector="switchImageOnOff:" destination="wno-gt-It1" eventType="valueChanged" id="eOS-nd-FbB"/>
+                                </connections>
+                            </switch>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EPG-96-x1p">
+                                <rect key="frame" x="16" y="44" width="134" height="200"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="OPd-ef-S9g" firstAttribute="bottom" secondItem="5Yq-ue-ZBu" secondAttribute="bottom" constant="50" id="BhZ-Nq-To6"/>
+                            <constraint firstItem="OPd-ef-S9g" firstAttribute="bottom" secondItem="9bE-hF-8X7" secondAttribute="bottom" constant="50" id="Go0-P0-Cbs"/>
+                            <constraint firstItem="OPd-ef-S9g" firstAttribute="trailing" secondItem="9bE-hF-8X7" secondAttribute="trailing" constant="50" id="hCG-A7-MIj"/>
+                            <constraint firstItem="5Yq-ue-ZBu" firstAttribute="leading" secondItem="OPd-ef-S9g" secondAttribute="leading" constant="50" id="zIV-ue-kgm"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="OPd-ef-S9g"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" systemItem="bookmarks" id="QZj-Nn-cWX"/>
+                    <connections>
+                        <outlet property="btnResize" destination="5Yq-ue-ZBu" id="DqR-e2-5tP"/>
+                        <outlet property="imgView" destination="EPG-96-x1p" id="1TQ-nH-euN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7Kj-tr-tE6" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1799" y="137"/>
+        </scene>
+        <!--Date View Controller-->
+        <scene sceneID="F41-mE-WGq">
+            <objects>
+                <viewController id="GXj-rU-j6d" customClass="DateViewController" customModule="Tab" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cxU-jG-9fS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="i0m-eC-uTX">
+                                <rect key="frame" x="27.666666666666657" y="162" width="320" height="449"/>
+                                <connections>
+                                    <action selector="changeDatePicker:" destination="GXj-rU-j6d" eventType="valueChanged" id="AcQ-WJ-aUT"/>
+                                </connections>
+                            </datePicker>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Now:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="70C-1V-g4s">
+                                <rect key="frame" x="20" y="94" width="335" height="18"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Selected:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BCP-BR-Y5G">
+                                <rect key="frame" x="20" y="661" width="335" height="18"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="txZ-yb-RAM" firstAttribute="trailing" secondItem="70C-1V-g4s" secondAttribute="trailing" constant="20" id="9UN-VT-yTZ"/>
+                            <constraint firstItem="70C-1V-g4s" firstAttribute="top" secondItem="txZ-yb-RAM" secondAttribute="top" constant="50" id="Abo-1A-bRr"/>
+                            <constraint firstItem="txZ-yb-RAM" firstAttribute="trailing" secondItem="BCP-BR-Y5G" secondAttribute="trailing" constant="20" id="IXn-xV-U4h"/>
+                            <constraint firstItem="70C-1V-g4s" firstAttribute="leading" secondItem="txZ-yb-RAM" secondAttribute="leading" constant="20" id="P5O-hf-yNr"/>
+                            <constraint firstItem="BCP-BR-Y5G" firstAttribute="leading" secondItem="txZ-yb-RAM" secondAttribute="leading" constant="20" id="Pl7-2U-wTV"/>
+                            <constraint firstItem="i0m-eC-uTX" firstAttribute="top" secondItem="70C-1V-g4s" secondAttribute="bottom" constant="50" id="WLj-UI-Cpq"/>
+                            <constraint firstItem="i0m-eC-uTX" firstAttribute="centerX" secondItem="txZ-yb-RAM" secondAttribute="centerX" id="XGL-mZ-LKI"/>
+                            <constraint firstItem="BCP-BR-Y5G" firstAttribute="top" secondItem="i0m-eC-uTX" secondAttribute="bottom" constant="50" id="av9-zL-sv9"/>
+                            <constraint firstItem="txZ-yb-RAM" firstAttribute="bottom" secondItem="BCP-BR-Y5G" secondAttribute="bottom" constant="50" id="bx3-7p-QFn"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="txZ-yb-RAM"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" systemItem="recents" id="A1f-iK-fPx"/>
+                    <connections>
+                        <outlet property="lblCurrentTime" destination="70C-1V-g4s" id="5qA-wv-VZc"/>
+                        <outlet property="lblSelectedTime" destination="BCP-BR-Y5G" id="yM5-fY-wro"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xMh-ea-AgA" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="945" y="529"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="File.png" width="1280" height="1124"/>
+    </resources>
+</document>
