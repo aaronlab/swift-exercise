@@ -18,8 +18,67 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="MTd-Le-jSE">
                                 <rect key="frame" x="16" y="44" width="343" height="734"/>
                                 <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalCentering" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="49S-V4-G5q">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="32"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="grK-ou-3vZ">
+                                                <rect key="frame" x="0.0" y="1" width="38" height="30"/>
+                                                <state key="normal" title="Black"/>
+                                                <connections>
+                                                    <action selector="btnBlack:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vyi-iY-j15"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YgD-sX-laF">
+                                                <rect key="frame" x="107" y="1" width="30" height="30"/>
+                                                <state key="normal" title="Red"/>
+                                                <connections>
+                                                    <action selector="btnRed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ifx-de-8CI"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GeV-Dg-806">
+                                                <rect key="frame" x="203.66666666666666" y="1" width="42" height="30"/>
+                                                <state key="normal" title="Green"/>
+                                                <connections>
+                                                    <action selector="btnGreen:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cxP-93-2Ib"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c4a-ey-eiJ">
+                                                <rect key="frame" x="312" y="1" width="31" height="30"/>
+                                                <state key="normal" title="Blue"/>
+                                                <connections>
+                                                    <action selector="btnBlue:" destination="BYZ-38-t0r" eventType="touchUpInside" id="53L-dM-wuD"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="32" id="APr-0f-aJn"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="rDa-8S-XHz">
+                                        <rect key="frame" x="0.0" y="32" width="343" height="32"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Stroke" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xoB-r2-Ji9">
+                                                <rect key="frame" x="0.0" y="5.9999999999999982" width="112.66666666666667" height="20.333333333333329"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wd0-tL-pB9">
+                                                <rect key="frame" x="112.66666666666666" y="5.9999999999999982" width="17.333333333333343" height="20.333333333333329"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minimumValue="1" maximumValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="2Dy-Tb-vqf">
+                                                <rect key="frame" x="130" y="0.0" width="213" height="32"/>
+                                                <connections>
+                                                    <action selector="changeStepper:" destination="BYZ-38-t0r" eventType="valueChanged" id="8kV-mq-FQ0"/>
+                                                </connections>
+                                            </stepper>
+                                        </subviews>
+                                    </stackView>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="feI-bW-HYh">
-                                        <rect key="frame" x="0.0" y="0.0" width="343" height="694"/>
+                                        <rect key="frame" x="0.0" y="64" width="343" height="630"/>
                                     </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aeK-lZ-w2k">
                                         <rect key="frame" x="0.0" y="694" width="343" height="40"/>
@@ -45,6 +104,8 @@
                     </view>
                     <connections>
                         <outlet property="imgView" destination="feI-bW-HYh" id="Ly6-vC-6Yn"/>
+                        <outlet property="lblStroke" destination="Wd0-tL-pB9" id="uAl-H1-wP3"/>
+                        <outlet property="stepperStroke" destination="2Dy-Tb-vqf" id="02L-pP-xNJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

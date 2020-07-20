@@ -11,19 +11,48 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet var imgView: UIImageView!
+    @IBOutlet var lblStroke: UILabel!
+    @IBOutlet var stepperStroke: UIStepper!
     
     var lastPoint: CGPoint!     // 최근 터치 or 이동한 위치
-    var lineSize: CGFloat = 2.0     // 선 두께 2.0
-    var lineColor = UIColor.red.cgColor     // 선 색상 빨강
+    var lineSize: CGFloat = 1.0     // 선 두께 1.0
+    var lineColor = UIColor.black.cgColor     // 선 색상 검정
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        stepperStroke.value = 1
+        lblStroke.text = String(Int(stepperStroke.value))
     }
     
     @IBAction func clearImgView(_ sender: UIButton) {
         imgView.image = nil     // 이미지 뷰의 이미지 삭제
     }
+    
+    @IBAction func btnBlack(_ sender: UIButton) {
+        lineColor = UIColor.black.cgColor
+    }
+    
+    @IBAction func btnRed(_ sender: UIButton) {
+        lineColor = UIColor.red.cgColor
+    }
+    
+    @IBAction func btnGreen(_ sender: UIButton) {
+        lineColor = UIColor.green.cgColor
+    }
+    
+    
+    @IBAction func btnBlue(_ sender: UIButton) {
+        lineColor = UIColor.blue.cgColor
+    }
+    
+    
+    @IBAction func changeStepper(_ sender: UIStepper) {
+        let newValue = sender.value
+        lblStroke.text = String(Int(newValue))
+        lineSize = CGFloat(newValue)
+    }
+    
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         let touch = touches.first! as UITouch       // 발생한 터치 이벤트 가져오기
