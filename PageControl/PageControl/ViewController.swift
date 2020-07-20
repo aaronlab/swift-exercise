@@ -9,6 +9,8 @@
 import UIKit
 
 class ViewController: UIViewController {
+    let MIN_PAGE_NUM: Int = 0
+    let MAX_PAGE_NUM: Int = 5
     
     var images = ["01.png", "02.png", "03.png", "04.png", "05.png", "06.png"]
     
@@ -29,6 +31,36 @@ class ViewController: UIViewController {
         pageControl.currentPageIndicatorTintColor = UIColor.black
         
         imgView.image = UIImage(named: images[0])
+        
+        let swipeLeft = UISwipeGestureRecognizer(target: self, action: #selector(ViewController.respondToSwipeGesture(_:)))
+        swipeLeft.direction = UISwipeGestureRecognizer.Direction.left
+        self.view.addGestureRecognizer(swipeLeft)
+        
+        let swipeRight = UISwipeGestureRecognizer(target: self, action: #selector(ViewController.respondToSwipeGesture))
+        swipeRight.direction = UISwipeGestureRecognizer.Direction.right
+        self.view.addGestureRecognizer(swipeRight)
+    }
+    
+    @objc func respondToSwipeGesture(_ gesture: UIGestureRecognizer) {
+        if let swipeGesture = gesture as? UISwipeGestureRecognizer {
+            switch swipeGesture.direction {
+                case UISwipeGestureRecognizer.Direction.left:
+                    if (pageControl.currentPage == MAX_PAGE_NUM) {
+                        pageControl.currentPage = MIN_PAGE_NUM
+                    } else {
+                        pageControl.currentPage += 1
+                    }
+                case UISwipeGestureRecognizer.Direction.right:
+                    if (pageControl.currentPage == MIN_PAGE_NUM) {
+                        pageControl.currentPage = MAX_PAGE_NUM
+                    } else {
+                        pageControl.currentPage -= 1
+                    }
+                default:
+                    break
+            }
+            imgView.image = UIImage(named: images[pageControl.currentPage])
+        }
     }
     
     // when the page changed
