@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MoviePlayer" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="zbe-E5-7Mt">
+                                <rect key="frame" x="16" y="64" width="343" height="718"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="In App Video Player" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kvi-2l-dHU">
+                                        <rect key="frame" x="97" y="0.0" width="149" height="32"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="32" id="6Jv-6c-Xta"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vo2-vK-sNZ">
+                                        <rect key="frame" x="0.0" y="31.999999999999986" width="343" height="255.66666666666663"/>
+                                        <state key="normal" title="Button" image="FastTyping.jpg"/>
+                                        <connections>
+                                            <action selector="btnPlayInternalMovie:" destination="BYZ-38-t0r" eventType="touchUpInside" id="J1W-bR-ZlN"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FUS-qD-9DF">
+                                        <rect key="frame" x="146.66666666666666" y="287.66666666666669" width="50" height="50"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="External Video Player" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3ow-hG-osq">
+                                        <rect key="frame" x="90.666666666666671" y="337.66666666666669" width="161.66666666666663" height="20.333333333333314"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4JS-RZ-hVJ">
+                                        <rect key="frame" x="0.0" y="358" width="343" height="360"/>
+                                        <state key="normal" title="Button" image="Fireworks.jpg"/>
+                                        <connections>
+                                            <action selector="btnPlayExternalMovie:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1EZ-oC-ePg"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="4JS-RZ-hVJ" firstAttribute="height" secondItem="vo2-vK-sNZ" secondAttribute="height" multiplier="1.40808" id="xLK-E4-Qhb"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="zbe-E5-7Mt" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="8WT-Sb-H7c"/>
+                            <constraint firstAttribute="bottom" secondItem="zbe-E5-7Mt" secondAttribute="bottom" constant="30" id="BEk-i9-blz"/>
+                            <constraint firstItem="zbe-E5-7Mt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="fiX-Yn-cM7"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="zbe-E5-7Mt" secondAttribute="trailing" constant="16" id="nYp-2a-Txc"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="132" y="138"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="FastTyping.jpg" width="640" height="360"/>
+        <image name="Fireworks.jpg" width="640" height="360"/>
+    </resources>
+</document>
