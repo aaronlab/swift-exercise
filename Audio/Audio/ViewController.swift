@@ -27,6 +27,7 @@ class ViewController: UIViewController, AVAudioPlayerDelegate, AVAudioRecorderDe
     @IBOutlet var btnPause: UIButton!
     @IBOutlet var btnStop: UIButton!
     @IBOutlet var slVolume: UISlider!
+    @IBOutlet var imgView: UIImageView!
     
     
     @IBOutlet var btnRecord: UIButton!
@@ -44,8 +45,10 @@ class ViewController: UIViewController, AVAudioPlayerDelegate, AVAudioRecorderDe
             initPlay()
             btnRecord.isEnabled = false
             lblRecordTime.isEnabled = false
+            imgView.image = UIImage(named: "stop.png")
         } else {    // 녹음 모드일 때
             initRecord()
+            imgView.image = UIImage(named: "record.png")
         }
         
     }
@@ -141,6 +144,7 @@ class ViewController: UIViewController, AVAudioPlayerDelegate, AVAudioRecorderDe
         audioPlayer.play()
         setPlayButtons(false, true, true)
         progressTimer = Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: timePlayerSelector, userInfo: nil, repeats: true)
+        imgView.image = UIImage(named: "play.png")
     }
     
     // 0.1초 마다 호출되며 재생 시간을 표시
@@ -153,6 +157,7 @@ class ViewController: UIViewController, AVAudioPlayerDelegate, AVAudioRecorderDe
     @IBAction func btnPauseAudio(_ sender: UIButton) {
         audioPlayer.pause()
         setPlayButtons(true, false, true)
+        imgView.image = UIImage(named: "pause.png")
     }
     
     // 정지 버튼 클릭 시
@@ -162,6 +167,7 @@ class ViewController: UIViewController, AVAudioPlayerDelegate, AVAudioRecorderDe
         lblCurrentTime.text = convertNSTimeInterval2String(0)
         setPlayButtons(true, false, false)
         progressTimer.invalidate()
+        imgView.image = UIImage(named: "stop.png")
     }
     
     // 볼륨 슬라이더 값을 audioPlayer.volume에 대입
@@ -173,6 +179,7 @@ class ViewController: UIViewController, AVAudioPlayerDelegate, AVAudioRecorderDe
     func audioPlayerDidFinishPlaying(_ player: AVAudioPlayer, successfully flag: Bool) {
         progressTimer.invalidate()
         setPlayButtons(true, false, false)
+        imgView.image = UIImage(named: "stop.png")
     }
     
     // 스위치를 on/off 하여 녹음 모드 결정
@@ -206,12 +213,14 @@ class ViewController: UIViewController, AVAudioPlayerDelegate, AVAudioRecorderDe
             audioRecorder.record()
             (sender as AnyObject).setTitle("Stop", for: UIControl.State())
             progressTimer = Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: timeRecordSelector, userInfo: nil, repeats: true)
+            imgView.image = UIImage(named: "record.png")
         } else {    // 버튼이 stop일 때 녹음을 위한 초기화 수행
             audioRecorder.stop()
             progressTimer.invalidate()
             (sender as AnyObject).setTitle("Record", for: UIControl.State())
             btnPlay.isEnabled = true
             initPlay()
+            imgView.image = UIImage(named: "stop.png")
         }
     }
     

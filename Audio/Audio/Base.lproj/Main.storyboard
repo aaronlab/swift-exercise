@@ -16,22 +16,22 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="31" translatesAutoresizingMaskIntoConstraints="NO" id="phv-Ju-FFJ">
-                                <rect key="frame" x="-1.5" y="84" width="417" height="235.5"/>
+                                <rect key="frame" x="-13.5" y="84" width="441" height="235.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Audio Player" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="944-1u-VLC">
-                                        <rect key="frame" x="138" y="0.0" width="141.5" height="29"/>
+                                        <rect key="frame" x="150" y="0.0" width="141.5" height="29"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Gsu-Os-jhs">
-                                        <rect key="frame" x="68.5" y="60" width="280" height="2"/>
+                                        <rect key="frame" x="80.5" y="60" width="280" height="2"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="280" id="E57-ew-bBW"/>
                                         </constraints>
                                     </progressView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="168" translatesAutoresizingMaskIntoConstraints="NO" id="pSw-MO-UdE">
-                                        <rect key="frame" x="24.5" y="93" width="368" height="20.5"/>
+                                        <rect key="frame" x="36.5" y="93" width="368" height="20.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="currentTime" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LHq-VI-PGR">
                                                 <rect key="frame" x="0.0" y="0.0" width="100" height="20.5"/>
@@ -54,7 +54,7 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="112" translatesAutoresizingMaskIntoConstraints="NO" id="JR2-pA-j6a">
-                                        <rect key="frame" x="44.5" y="144.5" width="328" height="30"/>
+                                        <rect key="frame" x="56.5" y="144.5" width="328" height="30"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4M2-i9-XGa">
                                                 <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
@@ -80,7 +80,7 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="61" translatesAutoresizingMaskIntoConstraints="NO" id="b3b-de-mLM">
-                                        <rect key="frame" x="0.0" y="205.5" width="417" height="30"/>
+                                        <rect key="frame" x="0.0" y="205.5" width="441" height="30"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Volume" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ora-EA-S3Q">
                                                 <rect key="frame" x="0.0" y="0.0" width="58" height="30"/>
@@ -89,7 +89,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="BO5-QV-P2A">
-                                                <rect key="frame" x="117" y="0.0" width="302" height="31"/>
+                                                <rect key="frame" x="117" y="0.0" width="326" height="31"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="230" id="x7m-R9-Rgr"/>
                                                 </constraints>
@@ -141,13 +141,22 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2WE-Wg-2ue">
+                                <rect key="frame" x="20" y="468.5" width="374" height="94.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="2WE-Wg-2ue" secondAttribute="height" multiplier="678:171" id="qHW-Gd-tkg"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="9Om-uh-3rF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1UT-0G-deT"/>
                             <constraint firstItem="phv-Ju-FFJ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="7Rj-MY-C0T"/>
+                            <constraint firstItem="2WE-Wg-2ue" firstAttribute="top" secondItem="9Om-uh-3rF" secondAttribute="bottom" constant="20" id="Flw-fy-hTe"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="2WE-Wg-2ue" secondAttribute="trailing" constant="20" id="Mm1-4H-2c6"/>
                             <constraint firstItem="phv-Ju-FFJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="PWK-uZ-nCQ"/>
                             <constraint firstItem="9Om-uh-3rF" firstAttribute="top" secondItem="phv-Ju-FFJ" secondAttribute="bottom" constant="50" id="RLa-TG-WhA"/>
+                            <constraint firstItem="2WE-Wg-2ue" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="vrl-jH-N4m"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -156,6 +165,7 @@
                         <outlet property="btnPlay" destination="4M2-i9-XGa" id="j5a-Qy-550"/>
                         <outlet property="btnRecord" destination="bMj-M0-U8a" id="0r9-xX-n4C"/>
                         <outlet property="btnStop" destination="i5C-aF-2Ww" id="pIU-9w-mep"/>
+                        <outlet property="imgView" destination="2WE-Wg-2ue" id="UZb-uc-ulY"/>
                         <outlet property="lblCurrentTime" destination="LHq-VI-PGR" id="1Zs-b8-vfH"/>
                         <outlet property="lblEndTime" destination="IW1-dh-cUb" id="vIC-rD-6Al"/>
                         <outlet property="lblRecordTime" destination="aBJ-0i-pi5" id="Kei-LY-Pq3"/>
