@@ -15,31 +15,42 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pqa-Ta-R5c">
-                                <rect key="frame" x="20" y="108" width="335" height="34"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f7X-GR-7T4">
-                                <rect key="frame" x="172.66666666666666" y="162" width="30" height="30"/>
+                                <rect key="frame" x="20" y="378" width="335" height="30"/>
                                 <state key="normal" title="Add"/>
                                 <connections>
                                     <action selector="btnAddItem:" destination="Vzb-CH-PlC" eventType="touchUpInside" id="OLx-Bq-y52"/>
                                 </connections>
                             </button>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xOM-iS-jao">
+                                <rect key="frame" x="0.0" y="88" width="375" height="216"/>
+                                <connections>
+                                    <outlet property="delegate" destination="Vzb-CH-PlC" id="Sko-hG-eCn"/>
+                                </connections>
+                            </pickerView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Description" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pqa-Ta-R5c">
+                                <rect key="frame" x="20" y="324" width="335" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="pqa-Ta-R5c" firstAttribute="top" secondItem="jOw-9U-3es" secondAttribute="top" constant="20" id="c7M-pG-XzA"/>
-                            <constraint firstItem="pqa-Ta-R5c" firstAttribute="leading" secondItem="jOw-9U-3es" secondAttribute="leading" constant="20" id="egE-zr-4S6"/>
-                            <constraint firstItem="f7X-GR-7T4" firstAttribute="top" secondItem="pqa-Ta-R5c" secondAttribute="bottom" constant="20" id="lxg-QU-rzI"/>
-                            <constraint firstItem="f7X-GR-7T4" firstAttribute="centerX" secondItem="jOw-9U-3es" secondAttribute="centerX" id="mvO-kW-q2d"/>
-                            <constraint firstItem="jOw-9U-3es" firstAttribute="trailing" secondItem="pqa-Ta-R5c" secondAttribute="trailing" constant="20" id="okX-LQ-ue8"/>
+                            <constraint firstItem="xOM-iS-jao" firstAttribute="top" secondItem="jOw-9U-3es" secondAttribute="top" id="79b-8x-bRL"/>
+                            <constraint firstItem="pqa-Ta-R5c" firstAttribute="top" secondItem="xOM-iS-jao" secondAttribute="bottom" constant="20" id="Ghn-m7-cCp"/>
+                            <constraint firstItem="xOM-iS-jao" firstAttribute="trailing" secondItem="jOw-9U-3es" secondAttribute="trailing" id="SAZ-uW-Ay0"/>
+                            <constraint firstItem="f7X-GR-7T4" firstAttribute="top" secondItem="pqa-Ta-R5c" secondAttribute="bottom" constant="20" id="cJK-46-BZa"/>
+                            <constraint firstItem="jOw-9U-3es" firstAttribute="trailing" secondItem="f7X-GR-7T4" secondAttribute="trailing" constant="20" id="fZH-lx-Sn0"/>
+                            <constraint firstItem="pqa-Ta-R5c" firstAttribute="leading" secondItem="jOw-9U-3es" secondAttribute="leading" constant="20" id="m7j-6k-UlM"/>
+                            <constraint firstItem="xOM-iS-jao" firstAttribute="leading" secondItem="jOw-9U-3es" secondAttribute="leading" id="nS6-Qv-Zyn"/>
+                            <constraint firstItem="jOw-9U-3es" firstAttribute="trailing" secondItem="pqa-Ta-R5c" secondAttribute="trailing" constant="20" id="qfU-hA-qq4"/>
+                            <constraint firstItem="f7X-GR-7T4" firstAttribute="leading" secondItem="jOw-9U-3es" secondAttribute="leading" constant="20" id="w4a-2C-eAz"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="jOw-9U-3es"/>
                     </view>
                     <navigationItem key="navigationItem" title="Add" id="wL4-HE-dlf"/>
                     <connections>
+                        <outlet property="pickerView" destination="xOM-iS-jao" id="HG2-iA-Nyt"/>
                         <outlet property="tfAddItem" destination="pqa-Ta-R5c" id="CIT-Ik-gp7"/>
                     </connections>
                 </viewController>
