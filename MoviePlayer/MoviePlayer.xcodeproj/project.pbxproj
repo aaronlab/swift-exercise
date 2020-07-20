@@ -16,6 +16,9 @@
 		A4920B1A24C5A663005FD213 /* FastTyping.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A4920B1724C5A663005FD213 /* FastTyping.jpg */; };
 		A4920B1B24C5A663005FD213 /* FastTyping.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = A4920B1824C5A663005FD213 /* FastTyping.mp4 */; };
 		A4920B1C24C5A663005FD213 /* Fireworks.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A4920B1924C5A663005FD213 /* Fireworks.jpg */; };
+		A4920B2024C5AB80005FD213 /* Mountaineering.mov in Resources */ = {isa = PBXBuildFile; fileRef = A4920B1D24C5AB80005FD213 /* Mountaineering.mov */; };
+		A4920B2124C5AB80005FD213 /* Seascape.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A4920B1E24C5AB80005FD213 /* Seascape.jpg */; };
+		A4920B2224C5AB80005FD213 /* Mountaineering.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A4920B1F24C5AB80005FD213 /* Mountaineering.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +33,9 @@
 		A4920B1724C5A663005FD213 /* FastTyping.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = FastTyping.jpg; sourceTree = "<group>"; };
 		A4920B1824C5A663005FD213 /* FastTyping.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = FastTyping.mp4; sourceTree = "<group>"; };
 		A4920B1924C5A663005FD213 /* Fireworks.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Fireworks.jpg; sourceTree = "<group>"; };
+		A4920B1D24C5AB80005FD213 /* Mountaineering.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = Mountaineering.mov; sourceTree = "<group>"; };
+		A4920B1E24C5AB80005FD213 /* Seascape.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Seascape.jpg; sourceTree = "<group>"; };
+		A4920B1F24C5AB80005FD213 /* Mountaineering.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Mountaineering.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +83,9 @@
 		A4920B1624C5A651005FD213 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				A4920B1F24C5AB80005FD213 /* Mountaineering.jpg */,
+				A4920B1D24C5AB80005FD213 /* Mountaineering.mov */,
+				A4920B1E24C5AB80005FD213 /* Seascape.jpg */,
 				A4920B1724C5A663005FD213 /* FastTyping.jpg */,
 				A4920B1824C5A663005FD213 /* FastTyping.mp4 */,
 				A4920B1924C5A663005FD213 /* Fireworks.jpg */,
@@ -142,11 +151,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A4920B2124C5AB80005FD213 /* Seascape.jpg in Resources */,
 				A4920B0F24C5A638005FD213 /* LaunchScreen.storyboard in Resources */,
 				A4920B0C24C5A638005FD213 /* Assets.xcassets in Resources */,
 				A4920B1B24C5A663005FD213 /* FastTyping.mp4 in Resources */,
+				A4920B2224C5AB80005FD213 /* Mountaineering.jpg in Resources */,
 				A4920B1A24C5A663005FD213 /* FastTyping.jpg in Resources */,
 				A4920B1C24C5A663005FD213 /* Fireworks.jpg in Resources */,
+				A4920B2024C5AB80005FD213 /* Mountaineering.mov in Resources */,
 				A4920B0A24C5A637005FD213 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

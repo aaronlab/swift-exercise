@@ -34,6 +34,21 @@ class ViewController: UIViewController {
         playVideo(url: url) // 앞에서 얻은 url을 사용하여 비디오를 재생
     }
     
+    @IBAction func btnPlayInternalMov(_ sender: UIButton) {
+        // internal file mov
+        let filePath: String? = Bundle.main.path(forResource: "Mountaineering", ofType: "mov")
+        let url = NSURL(fileURLWithPath: filePath!)
+        
+        playVideo(url: url)
+    }
+    
+    @IBAction func btnPlayExternalMov(_ sender: UIButton) {
+        // external file mov
+        let url = NSURL(string: "https://dl.dropboxusercontent.com/s/ijybpprsmx0bgre/Seascape.mov")!
+        
+        playVideo(url: url)
+    }
+    
     private func playVideo(url: NSURL) {
         // AVPlayerViewController의 인스턴스를 생성
         let playerController = AVPlayerViewController()
