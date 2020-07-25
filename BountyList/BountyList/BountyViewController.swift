@@ -35,7 +35,7 @@ class BountyViewController: UIViewController, UITableViewDataSource, UITableView
     
     // when you tab on a cell
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print("clicked on \(indexPath.row)")
+        performSegue(withIdentifier: "showDetail", sender: nil)
     }
 }
 
