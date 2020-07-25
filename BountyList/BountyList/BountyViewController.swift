@@ -7,7 +7,7 @@
 
 import UIKit
 
-class BountyViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class BountyViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
     
     /*
      MVVM
@@ -42,24 +42,33 @@ class BountyViewController: UIViewController, UITableViewDataSource, UITableView
         super.viewDidLoad()
     }
     
-    // how many rows
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    // DataSource
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return viewModel.numberOfBountyInfoList
     }
     
-    // what cell will be shown?
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as? ListCell else {
-            return UITableViewCell()
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "GridCell", for: indexPath) as? GridCell else {
+            return UICollectionViewCell()
         }
-        let bountyInfo = viewModel.bountyInfo(at: indexPath.row)
+        let bountyInfo = viewModel.bountyInfo(at: indexPath.item)
         cell.update(info: bountyInfo)
         return cell
     }
     
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        // perform segue, when you tab on a cell
-        performSegue(withIdentifier: "showDetail", sender: indexPath.row)
+    // Delegate
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "showDetail", sender: indexPath.item)
+    }
+    
+    // DelegateFlowLyaout
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        let itemSpace: CGFloat = 10
+        let textHeight: CGFloat = 65
+        
+        let width: CGFloat = (collectionView.bounds.width - itemSpace) / 2
+        let height: CGFloat = width * 10/7 + textHeight
+        return CGSize(width: width, height: height)
     }
 }
 
@@ -101,5 +110,17 @@ class BountyViewModel {
     
     func bountyInfo(at index: Int) -> BountyInfo {
         return sortedList[index]
+    }
+}
+
+class GridCell: UICollectionViewCell {
+    @IBOutlet weak var imgView: UIImageView!
+    @IBOutlet weak var nameLable: UILabel!
+    @IBOutlet weak var bountyLabel: UILabel!
+    
+    func update(info: BountyInfo) {
+        imgView.image = info.image
+        nameLable.text = info.name.capitalized
+        bountyLabel.text = "$ \(info.bounty)"
     }
 }
