@@ -9,8 +9,20 @@ import UIKit
 
 class BountyViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
+    // name, bounty list
     let nameList = ["brook", "chopper", "franky", "luffy", "nami", "robin", "sanji", "zoro"]
     let bountyList = [33000000, 50, 44000000, 300000000, 16000000, 80000000, 77000000, 120000000]
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // send data to detailViewController
+        if segue.identifier == "showDetail" {
+            let vc = segue.destination as? DetailViewController
+            if let index = sender as? Int {
+                vc?.name = nameList[index]
+                vc?.bounty = bountyList[index]
+            }
+        }
+    }
    
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,9 +45,9 @@ class BountyViewController: UIViewController, UITableViewDataSource, UITableView
         return cell
     }
     
-    // when you tab on a cell
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        performSegue(withIdentifier: "showDetail", sender: nil)
+        // perform segue, when you tab on a cell
+        performSegue(withIdentifier: "showDetail", sender: indexPath.row)
     }
 }
 

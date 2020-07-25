@@ -102,14 +102,47 @@
                                     <action selector="close:" destination="SVw-P5-peP" eventType="touchUpInside" id="geK-qK-0Kw"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5mM-td-42s">
+                                <rect key="frame" x="50" y="50" width="275" height="393"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="5mM-td-42s" secondAttribute="height" multiplier="7:10" id="KuP-dA-cQO"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fK3-5M-6Ta">
+                                <rect key="frame" x="50" y="473" width="275" height="30"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bounty" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EPs-n4-pok">
+                                <rect key="frame" x="50" y="523" width="275" height="24"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <color key="textColor" systemColor="systemGray2Color" red="0.68235294120000001" green="0.68235294120000001" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="5mM-td-42s" firstAttribute="top" secondItem="0Oj-Bq-sVS" secondAttribute="top" constant="50" id="8ih-Sq-bcq"/>
+                            <constraint firstItem="EPs-n4-pok" firstAttribute="leading" secondItem="0Oj-Bq-sVS" secondAttribute="leading" constant="50" id="BhB-tE-xco"/>
                             <constraint firstItem="nid-u0-66w" firstAttribute="top" secondItem="0Oj-Bq-sVS" secondAttribute="top" constant="20" id="Gff-Zl-j74"/>
+                            <constraint firstItem="EPs-n4-pok" firstAttribute="top" secondItem="fK3-5M-6Ta" secondAttribute="bottom" constant="20" id="WlA-DX-R4a"/>
                             <constraint firstItem="0Oj-Bq-sVS" firstAttribute="trailing" secondItem="nid-u0-66w" secondAttribute="trailing" constant="16" id="gMd-GZ-ed8"/>
+                            <constraint firstItem="fK3-5M-6Ta" firstAttribute="top" secondItem="5mM-td-42s" secondAttribute="bottom" constant="30" id="nrt-GH-Xui"/>
+                            <constraint firstItem="0Oj-Bq-sVS" firstAttribute="trailing" secondItem="fK3-5M-6Ta" secondAttribute="trailing" constant="50" id="o1z-Uc-zQX"/>
+                            <constraint firstItem="5mM-td-42s" firstAttribute="leading" secondItem="0Oj-Bq-sVS" secondAttribute="leading" constant="50" id="pQl-wd-tLD"/>
+                            <constraint firstItem="0Oj-Bq-sVS" firstAttribute="trailing" secondItem="EPs-n4-pok" secondAttribute="trailing" constant="50" id="qjh-qs-dDh"/>
+                            <constraint firstItem="0Oj-Bq-sVS" firstAttribute="trailing" secondItem="5mM-td-42s" secondAttribute="trailing" constant="50" id="sH9-Ev-cwJ"/>
+                            <constraint firstItem="5mM-td-42s" firstAttribute="centerX" secondItem="0Oj-Bq-sVS" secondAttribute="centerX" id="uew-gH-Pyh"/>
+                            <constraint firstItem="fK3-5M-6Ta" firstAttribute="leading" secondItem="0Oj-Bq-sVS" secondAttribute="leading" constant="50" id="ukz-gu-BWJ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="0Oj-Bq-sVS"/>
                     </view>
+                    <connections>
+                        <outlet property="bountyLabel" destination="EPs-n4-pok" id="Sf5-ub-oKm"/>
+                        <outlet property="imgView" destination="5mM-td-42s" id="ORd-Q4-hwH"/>
+                        <outlet property="nameLabel" destination="fK3-5M-6Ta" id="lBZ-DU-JvJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="b4F-lr-lOC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
