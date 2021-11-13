@@ -12,6 +12,7 @@ target 'TableViewCellZoom' do
 
   pod 'SnapKit'
   pod 'Then'
+  pod 'Kingfisher'
 
 end
 
